@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.border-paper {
+  border: 10px solid rgb(37 99 235 / 1);
+}
+
+.border-scissors {
+  border: 10px solid rgb(202 138 4 / 1);
+}
+
+.border-rock {
+  border: 10px solid rgb(220 38 39 / 1);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@layer utilities {
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,700&display=swap');
+  body {
+    background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    );
+  }
+
+  .bg-rock {
+    background-image: url('../images/icon-rock.svg');
+  }
+
+  .bg-paper {
+    background-image: url('../images/icon-paper.svg');
+  }
+
+  .bg-scissors {
+    background-image: url('../images/icon-scissors.svg');
+  }
+}
